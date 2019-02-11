@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Document</title>
+</head>
+<body>
+<img src="images (2).png"  width="300px"><br><br>
+<img src="download.jpg"  width="300px"><br><br>
+
+<img src="shutterstock_519889861-850x476.jpg" width="300px">
+
+    <button  onclick="fun1()" >Click</button>
+</body>
+<script>
+    function fun1(){
+        var a = document.getElementsByTagName('img');
+        var newAttribute = ["hh.jpg", "images.jpg", "download (4).jpg"];
+        for (var i = 0; i < a.length; i++){
+        a[i].attributes[0].value = newAttribute[i]
+        }
+    }
+</script>
+</html>
